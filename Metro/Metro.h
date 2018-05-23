@@ -21,26 +21,23 @@
 /*  * * * * * * * * * * * * * * * * * * * * * * * * * * * 
  Main code by Thomas O Fredericks (tof@t-o-f.info)
  Contributions by Paul Bouchier and Benjamin.soelberg
+ Minor but important improvements by Suren Khorenyan
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 #ifndef Metro_h
 #define Metro_h
 
-#include <inttypes.h>
+class Metro {
 
-
-class Metro
-{
-
-public:
-  Metro();
-  Metro(unsigned long interval_millis);
-  void interval(unsigned long interval_millis);
-  uint8_t check();
-  void reset();
-	
-private:
-  unsigned long  previous_millis, interval_millis;
+    public:
+      Metro();
+      Metro(unsigned long interval_millis);
+      void interval(unsigned long interval_millis);
+      int check();
+      void reset();
+        
+    private:
+      unsigned long  previous_millis, interval_millis;
 
 };
 

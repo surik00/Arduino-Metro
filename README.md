@@ -1,5 +1,14 @@
-METRO
+METRO - A tiny timing Arduino library
 =====================
+
+# From me:
+
+Some improvements that I think are a little handy
+
+And minor refactoring (just for me)
+
+
+# From Author:
 
 Metro works well, but this is the new version : https://github.com/SofaPirate/Chrono
 
